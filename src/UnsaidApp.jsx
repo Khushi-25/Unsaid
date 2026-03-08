@@ -849,9 +849,9 @@ const toggleCam = () => {
             <source src={openEntry.video} type="video/webm"/>
           </video>
         )}
-        {openEntry.type==="video"&&openEntry.text&&(
-          <p style={{fontFamily:"'Caveat',cursive",fontSize:"20px",lineHeight:1.8,whiteSpace:"pre-wrap",color:T.ink,marginTop:"20px"}}>{openEntry.text}</p>
-        )}
+        {openEntry.text&&openEntry.type!=="feeling"&&openEntry.type!=="video"&&(
+  <p style={{fontFamily:"'Caveat',cursive",fontSize:"22px",lineHeight:1.8,whiteSpace:"pre-wrap",wordBreak:"break-word",overflowWrap:"break-word",color:T.ink,marginBottom:"20px",maxWidth:"100%"}}>{openEntry.text}</p>
+)}
       </div></div>
     );
 
